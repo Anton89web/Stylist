@@ -1,0 +1,134 @@
+@import "../../styles/variables"
+
+.main
+  display: flex
+  flex-direction: column
+  gap: 65px
+
+.subheader
+  &__wrapper
+    @extend %flex-bw
+    gap: 15px
+  &__img
+    @extend %img
+
+.name
+  &__title
+    font-family: 'Garamond', serif
+    font-size: 4.37em
+    text-align: center
+  &__subtitle
+    font-family: 'Core Sans N'
+    font-size: 1.84em
+    text-align: center
+
+.about
+  &__bottom-text
+    padding: 0 55px
+    font-family: 'Garamond'
+    font-size: 1.73em
+    line-height: 1.12em
+    text-align: center
+  &__footer
+    background-color: $bc
+    height: 350px
+
+.services
+  &__title
+    @extend %main-title
+  &__descr
+    height: 665px
+    background: #D9D9D9
+
+.portfolio
+  &__title
+    @extend %main-title
+
+.reviews
+  &__title
+    @extend %main-title
+  &__carousel
+    position: relative
+    &_left
+      padding: 5px 7px 5px 4px
+      height: 35px
+      width: 35px
+      position: absolute
+      left: 0
+      bottom: 50%
+      cursor: pointer
+      background-color: $bc
+      border-radius: 100%
+    &_rigth
+      padding: 5px 7px 5px 4px
+      height: 35px
+      width: 35px
+      border-radius: 100%
+      position: absolute
+      right: 0
+      bottom: 50%
+      transform: rotate(180deg)
+      cursor: pointer
+      background-color: $bc
+  &__carousel_wrapp
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 600px
+    height: 100%
+  &__text
+    max-width: 350px
+    text-align: left
+    @extend %main-text
+  &__img
+    @extend %img
+    max-width: 350px
+    &_wrapp
+      height: 100%
+
+.blog
+  padding: 70px 0
+  min-height: 730px
+  background-color: $bc
+  color: #020202
+  &__title
+    @extend %main-title
+  &__contents
+    height: 100%
+    min-height: 420px
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 75px
+  &__img
+    background-color: #D9D9D9
+
+.contacts
+  &__title
+    @extend %main-title
+  &__subtitle
+    @extend %main-title
+    font-size: 2em
+    line-height: 1.12em
+  &__mail
+    display: block
+    @extend %main-title
+    font-size: 2.84em
+    line-height: 1.12em
+    color: $bc
+    text-decoration: none
+    cursor: pointer
+
+  &__tel
+    display: block
+    @extend %main-title
+    font-size: 2.6em
+    line-height: 1em
+    color: $bc
+    text-decoration: none
+    cursor: pointer
+
+.social
+  &__wrapp
+    display: flex
+    justify-content: center
+    gap: 50px

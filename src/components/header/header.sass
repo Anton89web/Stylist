@@ -1,0 +1,15 @@
+@import "../../styles/variables"
+
+.header
+  display: flex
+  align-items: center
+  min-height: 170px
+
+.nav
+  &__links
+    @extend %flex-bw
+    list-style: none
+    padding: 0
+    margin: 0
+  &__link
+    @extend %nav
