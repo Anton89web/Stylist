@@ -1,15 +1,13 @@
-import Header from "../../components/header/header";
-import About from "../../components/about/about";
-import Btn from "../../components/btn/btn";
-import PortfolioFoto from "../../components/portfolio_foto/portfolio_foto";
-import Footer from "../../components/footer/footer";
-import "./main.sass"
+import About from "../../components/about/About";
+import Btn from "../../components/btn/Btn";
+import PortfolioFoto from "../../components/portfolio_foto/PortfolioFoto";
+import { NavLink } from "react-router-dom";
+import "./mainPage.sass"
 
 const Main = () => {
   
   return  (
     <div className="main">
-    <Header/>
     <div className="subheader">
       <div className="container subheader__wrapper">
         <div className="subheader__img-edge">
@@ -31,11 +29,16 @@ const Main = () => {
     </div>
     <div className="center_container">
       <h1 className="name__title">ДИАНА СМИРНОВА</h1>
-      <p className="name__subtitle">женский и мужской стилист</p>
+      <p className="name__subtitle">женский и мужской стилист
+      <img className="name__eng" src="media/icons/about.svg" alt=""/>
+      </p>
     </div>
-    <About/>
+    <About btn={true}/>
     <div className="center_container">
-      <p className="about__bottom-text">Открывая передо мной свой гардероб, вы открываете частичку себя, взамен я отдаю вам все что знаю и умею, а главное - помогаю обрести себя через стиль
+      <p className="about__bottom-text">
+        <img className="about__name_eng" src="media/icons/name.svg" alt=""/>
+        <img className="about__quotes" src="media/icons/,,.svg" alt=""/>
+        Открывая передо мной свой гардероб, вы открываете частичку себя, взамен я отдаю вам все что знаю и умею, а главное - помогаю обрести себя через стиль
       </p>
     </div>
     <div className="about__footer">
@@ -50,8 +53,12 @@ const Main = () => {
         УСЛУГИ
       </h3>
       <div className="services__descr">
+        <img className="services__eng" src="media/icons/services.svg" alt=""/>
       </div>
-    <Btn/>
+      <NavLink to="/services">
+        <Btn/>
+      </NavLink>
+    
     </div>
   </section>
 
@@ -59,6 +66,7 @@ const Main = () => {
     <div className="center_container">
         <h3 className="portfolio__title">
           ПОРТФОЛИО
+          <img className="portfolio__eng" src="media/icons/portfolio.svg" alt=""/>
         </h3>
         <PortfolioFoto/>
     </div>
@@ -69,6 +77,7 @@ const Main = () => {
   <div className="center_container">
     <h3 className="reviews__title">
       ОТЗЫВЫ
+      <img className="reviews__eng" src="media/icons/reviews.svg" alt=""/>
     </h3>
   <div className="reviews__carousel">
     <img src="media/icons/shevron.svg" alt="" className="reviews__carousel_left" />
@@ -91,20 +100,20 @@ const Main = () => {
 
   <section className="blog">
   <div className="center_container">
-    <div className="blog__title">
+    <h3 className="blog__title">
       БЛОГ
-    </div>
+      <img className="blog__eng" src="media/icons/blog.svg" alt=""/>
+    </h3>
     <div className="blog__contents">
       <div className="blog__img"></div>
       <div className="blog__img"></div>
       <div className="blog__img"></div>
     </div>
-    <Btn/>
+    <NavLink to="/blog">
+      <Btn/>
+    </NavLink>
   </div>
-  </section>
-
-  <Footer/>
-    
+  </section> 
   </div>
   )
 

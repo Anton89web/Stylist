@@ -1,1 +1,40 @@
 @import "../../styles/variables.sass"
+
+.footer
+  padding-top: 90px
+
+.contacts
+  &__title
+    @extend %main-title
+    position: relative
+  &__eng
+    position: absolute
+    top: -50%
+    right: -30%
+  &__subtitle
+    @extend %main-title
+    font-size: 2em
+    line-height: 1.12em
+  &__mail
+    display: block
+    @extend %main-title
+    font-size: 2.84em
+    line-height: 1.12em
+    color: $bc
+    text-decoration: none
+    cursor: pointer
+
+  &__tel
+    display: block
+    @extend %main-title
+    font-size: 2.6em
+    line-height: 1em
+    color: $bc
+    text-decoration: none
+    cursor: pointer
+
+.social
+  &__wrapp
+    display: flex
+    justify-content: center
+    gap: 50px

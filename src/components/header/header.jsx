@@ -1,28 +1,42 @@
+import { NavLink } from "react-router-dom";
 import './header.sass'
 
 
 const Header = () => {
+  const setActive = ({isActive}) => isActive ? "active_link" : "nav__link";
   return (
     <div className="header">
       <div className="container">
         <ul className="nav__links">
-          <li className="nav__link">
-            <a>ГЛАВНАЯ СТАНИЦА</a>
+          <li>
+            <NavLink to="main" className={setActive}>
+              ГЛАВНАЯ СТРАНИЦА
+            </NavLink>
           </li>
-          <li className="nav__link">
-            <a>ОБО МНЕ</a>
+          <li >
+            <NavLink  to="about" className={setActive}>
+              ОБО МНЕ
+            </NavLink>
           </li>
-          <li className="nav__link">
-            <a>УСЛУГИ</a>
+          <li>
+            <NavLink to="services" className={setActive}>
+              УСЛУГА
+            </NavLink>
           </li>
-          <li className="nav__link">
-            <a>ПОРТФОЛИО</a>
+          <li>
+            <NavLink to="portfolio" className={setActive}>
+              ПОРТФОЛИО
+            </NavLink>
           </li>
-          <li className="nav__link">
-            <a>БЛОГ</a>
+          <li>
+            <NavLink to="blog" className={setActive}>
+              БЛОГ
+            </NavLink>
           </li>
-          <li className="nav__link">
-            <a>КОНТАКТЫ</a>
+          <li>
+            <NavLink to="/contacts" className={setActive}>
+              КОНТАКТЫ
+            </NavLink>
           </li>
         </ul>
       </div>

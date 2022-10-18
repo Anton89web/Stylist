@@ -1,6 +1,5 @@
-import Header from "../header/header";
-
-
+import Header from "../header/Header";
+import "./footer.sass"
 
 
 const Footer = () => {
@@ -9,6 +8,7 @@ const Footer = () => {
       <div className="center_container">
         <h3 className="contacts__title">
           КОНТАКТЫ
+          <img className="contacts__eng" src="media/icons/contacts.svg" alt=""/>
         </h3>
         <p className="contacts__subtitle">
           Свяжитесь со мной любым удобным для вас способом!

@@ -1,5 +1,6 @@
-import Btn from "../btn/btn"
-import "./portfolio_foto.sass"
+import Btn from "../btn/Btn"
+import { NavLink } from "react-router-dom";
+import "./portfolioFoto.sass"
 
 
 
@@ -35,7 +36,9 @@ const PortfolioFoto = ()=> {
               <img className="portfolio__img" src="media/img/main/portfolio/12.jpg" alt="" />
           </div>
         </div>
-        <Btn/>
+        <NavLink to="/portfolio">
+          <Btn/>
+        </NavLink>
     </div>
   )
 }
