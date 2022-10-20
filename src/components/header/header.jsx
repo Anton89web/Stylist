@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container">
         <ul className="nav__links">
           <li>
-            <NavLink to="main" className={setActive}>
+            <NavLink to='main' className={setActive}>
               ГЛАВНАЯ СТРАНИЦА
             </NavLink>
           </li>
@@ -20,7 +20,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink to="services" className={setActive}>
-              УСЛУГА
+              УСЛУГИ
             </NavLink>
           </li>
           <li>

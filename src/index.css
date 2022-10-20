@@ -17,3 +17,21 @@ body {
 a {
   text-decoration: none;
 }
+
+ol,
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.center_container {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+}

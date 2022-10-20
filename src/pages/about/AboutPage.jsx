@@ -1,5 +1,5 @@
-
 import About from "../../components/about/About";
+import "./aboutPage.sass"
 
 const AboutPage = () => {
   const text_1 = "Пишите мне, и вы получите актуальный гардероб без лишних вещей, который вам нравится, восторг и комплименты окружающих, энергию и отличное настроение.";

@@ -12,7 +12,6 @@ const About = ({btn, text1, text2, list, fz}) => {
         <h3 className="about__title">
           ОБО МНЕ
         </h3>
-
         <div className="about__descr">
           <img src="media/img/main/header/6.jpg" alt="" className="descr__img" />
           <div className="descr__text_wrapp" style={{fontSize: fz || '1em'}}>

@@ -1,0 +1,50 @@
+@import "../../styles/variables"
+
+.service
+  margin-bottom: 70px
+  &__title
+    @extend %service__title
+    position: relative
+    &_arrow
+      position: absolute
+      top: 25%
+      right: -150px
+      transition: all .3s ease-in-out
+    &_wrapper
+      cursor: pointer
+      text-align: left
+  &__descr
+    @extend %service__descr
+    &_close
+      margin-left: 95%
+      display: inline-block
+      text-align: right
+      font-size: 1em
+      cursor: pointer
+      transition: all .3s ease-in-out
+      &:hover
+        color: $bc_hover
+    &_text
+      padding-bottom: 20px
+    &_price
+      left: -190%
+      transition: all .7s ease-in-out
+      height: 0px
+      position: relative
+.price
+  font-family: 'Garamond'
+  font-size: 3.57em
+  &__wrapper
+    display: flex
+    align-items: baseline
+    justify-content: center
+    padding-bottom: 15px
+    position: relative
+  &__condition
+    font-family: 'Garamond'
+    font-size: 2em
+    padding: 0 45px
+.open
+  left: 0
+  height: 100%
+  padding: 15px

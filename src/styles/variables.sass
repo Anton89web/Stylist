@@ -1,16 +1,6 @@
 
 $bc: #BBB573
-
-.container
-  max-width: 1500px
-  width: 100%
-  padding: 0 30px
-  margin: 0 auto
-
-.center_container
-  max-width: 900px
-  text-align: center
-  margin: 0 auto
+$bc_hover: #7d7937
 
 %img
   width: 100%
@@ -62,4 +52,37 @@ $bc: #BBB573
   background-color: $bc
   border: solid 2px #181818
   cursor: pointer
-  margin-left: auto
+  transition: all .3s ease-in-out
+
+%portfolio__card_title
+  font-family: 'Garamond'
+  font-size: 3.47em
+  line-height: 1.12em
+  text-align: center
+
+%service__title
+  font-family: 'Garamond'
+  font-size: 3em
+  line-height: 1.11em
+  transition: all .3s ease-in-out
+  text-align: left
+  display: inline-block
+  cursor: pointer
+  margin-bottom: 10px
+  &:hover
+    color: $bc_hover
+    .service__title_arrow
+      right: -170px
+%service__descr
+  font-family: "Core Sans N"
+  font-size: 1.9em
+  line-height: 1em
+  text-align: left
+  border: solid 1px
+  position: relative
+  left: -190%
+  height: 0px
+  transition: all .5s ease-in-out
+.active
+  text-decoration: underline
+  color: #7d7937

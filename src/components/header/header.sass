@@ -11,6 +11,10 @@
     margin: 0
   &__link
     @extend %nav
+    transition: all .3s ease-in-out
+    &:hover
+      color: $bc_hover
 .active_link
   @extend %nav
   text-decoration: underline
+  color: $bc_hover

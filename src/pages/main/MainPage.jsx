@@ -58,7 +58,6 @@ const Main = () => {
       <NavLink to="/services">
         <Btn/>
       </NavLink>
-    
     </div>
   </section>
 
@@ -69,6 +68,9 @@ const Main = () => {
           <img className="portfolio__eng" src="media/icons/portfolio.svg" alt=""/>
         </h3>
         <PortfolioFoto/>
+        <NavLink to="/portfolio">
+          <Btn/>
+        </NavLink>
     </div>
   </section>
 
