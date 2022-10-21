@@ -4,8 +4,8 @@ import Btn from "../../components/btn/Btn";
 
 const Services = () => {
   function open(n){
-  document.querySelectorAll('.service__descr')[n].classList.toggle('open');
-  document.querySelectorAll('.service__descr_price')[n].classList.toggle('open');
+  document.querySelectorAll('.service__descr')[n].classList.toggle('hidden');
+  document.querySelectorAll('.service__descr_price')[n].classList.toggle('hidden');
   }
   return (
   <section className="services">
@@ -16,12 +16,14 @@ const Services = () => {
     <div className="service">
     <div className="service__title_wrapper">
         <h5 className="service__title" onClick={()=>open(0)}>РАЗБОР ГАРДЕРОБА
-        <img src="media/icons/arrow.svg" alt="" className="service__title_arrow"/>
+          <img src="media/icons/arrow.svg" alt="" className="service__title_arrow"/>
         </h5>
         
       </div>
-      <div className="service__descr">
-        <div className="service__descr_close" onClick={()=>open(0)}>X</div>
+      <div className="service__descr hidden">
+        <div className="service__descr_close" onClick={()=>open(0)}>
+          <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
+        </div>
         <ul className="service__descr_ul">
           <span>Я помогу вам решить такие проблемы как:</span>
           <li>- много вещей, нечего носить</li>
@@ -43,7 +45,7 @@ const Services = () => {
           <li>Список  вещей, которые надо купить  (примеры, без ссылок).Шопинг-лист со ссылками 2000 рублей.</li>
         </ul>
       </div>
-        <div className="service__descr_price">
+        <div className="service__descr_price hidden">
           <div className="price__wrapper">
             <span className="price__condition">до 3 часов</span>
             <span className="price">6 000 рублей</span>
@@ -63,8 +65,10 @@ const Services = () => {
         </h5>
         
       </div>
-      <div className="service__descr">
-        <div className="service__descr_close" onClick={()=>open(1)}>X</div>
+      <div className="service__descr hidden hidden">
+        <div className="service__descr_close" onClick={()=>open(1)}>
+          <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
+        </div>
         <p className="service__descr_text">Вы заполняете анкету или мы общаемся лично, я анализирую ваш запрос, после чего я делаю предварительный шопинг, чтобы заблаговременно собрать и подготовить комплекты для примерки, и сэкономить ваше время. 
         </p>
         <p className="service__descr_text">Если какие-то вещи не подошли или не нашли подходящие, даю ссылки на вещи в онлайн магазинах. 
@@ -75,7 +79,7 @@ const Services = () => {
         <p className="service__descr_text">В подарок на 3 месяца online поддержка по поводу составления комплектов и новых покупок.
         </p>
       </div>
-      <div className="service__descr_price">
+      <div className="service__descr_price hidden">
         <div className="price__wrapper">
           <span className="price">7 000 рублей</span>
         </div>
@@ -90,15 +94,17 @@ const Services = () => {
         </h5>
         
       </div>
-      <div className="service__descr">
-        <div className="service__descr_close" onClick={()=>open(2)}>X</div>
+      <div className="service__descr hidden">
+        <div className="service__descr_close" onClick={()=>open(2)}>
+          <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
+        </div>
         <p className="service__descr_text">Включает в себя разбор гардероба, шопинг-сопровождение, после чего у вас дома я  составляю максимальное 
 количество комплектов  из новых и старых вещей.  
         </p>
         <p className="service__descr_text">В подарок на 3 месяца online поддержка по поводу составления комплектов и новых покупок.
         </p>
       </div>
-      <div className="service__descr_price">
+      <div className="service__descr_price hidden">
         <div className="price__wrapper">
           <span className="price">10 000 рублей</span>
         </div>
@@ -113,8 +119,10 @@ const Services = () => {
         </h5>
         
       </div>
-      <div className="service__descr">
-        <div className="service__descr_close" onClick={()=>open(3)}>X</div>
+      <div className="service__descr hidden">
+        <div className="service__descr_close" onClick={()=>open(3)}>
+          <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
+        </div>
         <p className="service__descr_text">Капсула составляется для конкретных целей, озвученных вами (вы заполняете анкету), и содержит до 20 вещей.
         </p>
         <p className="service__descr_text">
@@ -128,7 +136,7 @@ const Services = () => {
         Если после выкупа вещей, что-то не подошло, подбираем альтернативные варианты.
         </p>
       </div>
-      <div className="service__descr_price">
+      <div className="service__descr_price hidden">
         <div className="price__wrapper">
           <span className="price">5 000 рублей</span>
         </div>
@@ -143,13 +151,15 @@ const Services = () => {
         </h5>
         
       </div>
-      <div className="service__descr">
-        <div className="service__descr_close" onClick={()=>open(4)}>X</div>
+      <div className="service__descr hidden">
+        <div className="service__descr_close" onClick={()=>open(4)}>
+          <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
+        </div>
         <p className="service__descr_text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus ipsam corporis, ducimus magni numquam incidunt optio quam assumenda nesciunt rem facilis, enim provident nemo eum et tempore blanditiis ea.
         </p>
       </div>
-      <div className="service__descr_price">
+      <div className="service__descr_price hidden">
           <div className="price__wrapper">
             <span className="price">2 000 рублей</span>
             <span className="price__condition">1 месяц</span>
@@ -169,14 +179,16 @@ const Services = () => {
         </h5>
         
       </div>
-      <div className="service__descr">
-        <div className="service__descr_close" onClick={()=>open(5)}>X</div>
+      <div className="service__descr hidden">
+        <div className="service__descr_close" onClick={()=>open(5)}>
+          <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
+        </div>
         <p className="service__descr_text">
         2 образа, подходящих вам и под локацию. 
         Рекомендации по прическе и макияжу.
         </p>
       </div>
-      <div className="service__descr_price">
+      <div className="service__descr_price hidden">
         <div className="price__wrapper">
             <span className="price">от 3 500 рублей</span>
         </div>
@@ -191,13 +203,15 @@ const Services = () => {
         </h5>
         
       </div>
-      <div className="service__descr">
-        <div className="service__descr_close" onClick={()=>open(6)}>X</div>
+      <div className="service__descr hidden">
+        <div className="service__descr_close" onClick={()=>open(6)}>
+          <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
+        </div>
         <p className="service__descr_text">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam consequatur mollitia incidunt magni. Reprehenderit distinctio voluptate accusamus dolorum asperiores doloremque, non eligendi. Aut, a. Sed esse repellat in velit quidem!
         </p>
       </div>
-      <div className="service__descr_price">
+      <div className="service__descr_price hidden">
         <div className="price__wrapper">
             <span className="price">ONLINE от 3 500 рублей</span>
         </div>
@@ -215,8 +229,10 @@ const Services = () => {
         </h5>
         
       </div>
-      <div className="service__descr">
-        <div className="service__descr_close" onClick={()=>open(7)}>X</div>
+      <div className="service__descr hidden">
+        <div className="service__descr_close" onClick={()=>open(7)}>
+          <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
+        </div>
         <p className="service__descr_text">Книга стиля является отличным помощником для людей, желающих найти свой стиль. Следуя индивидуальным 
 советам, данным в книге стиля, можно научиться 
 правильно преподносить себя, почувствовать уверенность в себе и обрести гармонию с собой.</p>
@@ -233,7 +249,7 @@ const Services = () => {
           <li>-формулы составления комплектов;</li>
         </ul>
       </div>
-      <div className="service__descr_price">
+      <div className="service__descr_price hidden">
         <div className="price__wrapper">
           <span className="price">7 000 рублей</span>
         </div>

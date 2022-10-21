@@ -3,9 +3,10 @@ import Btn from "../../components/btn/Btn";
 import PortfolioFoto from "../../components/portfolio_foto/PortfolioFoto";
 import { NavLink } from "react-router-dom";
 import "./mainPage.sass"
+import Carousel from "../../components/carousel/Carousel";
 
 const Main = () => {
-  
+
   return  (
     <div className="main">
     <div className="subheader">
@@ -51,9 +52,9 @@ const Main = () => {
     <div className="center_container">
       <h3 className="services__title">
         УСЛУГИ
+        <img className="services__eng" src="media/icons/services.svg" alt=""/>
       </h3>
       <div className="services__descr">
-        <img className="services__eng" src="media/icons/services.svg" alt=""/>
       </div>
       <NavLink to="/services">
         <Btn/>
@@ -82,19 +83,7 @@ const Main = () => {
       <img className="reviews__eng" src="media/icons/reviews.svg" alt=""/>
     </h3>
   <div className="reviews__carousel">
-    <img src="media/icons/shevron.svg" alt="" className="reviews__carousel_left" />
-    <img src="media/icons/shevron.svg" alt="" className="reviews__carousel_rigth" />
-    <div className="reviews__carousel_wrapp">
-      <div className="reviews__text">
-        <p>Меня зовут Диана Смирнова. 
-          Я - практикующий женский и мужской стилист. 
-          Выпускница Fashion-академии PSFA, участница многочисленных образовательных проектов  от топ стилистов Александра Рогова, Арсена.</p>
-        <p>Айрапетова,  Self Made Studio, Леси Пятибратовой, Насти Ножиной.</p>
-      </div>
-      <div className="reviews__img_wrapp">
-        <img src="media/img/main/header/6.jpg" alt="" className="reviews__img" />
-      </div>
-    </div>
+    <Carousel />
   </div>
   </div>
   </section>

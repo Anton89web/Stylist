@@ -29,6 +29,7 @@ $bc_hover: #7d7937
   line-height: 1.12em
   position: relative
   margin-bottom: 1em
+  display: inline-block
 
 %main-text
   font-family: 'Core Sans N', sans-serif
@@ -61,7 +62,7 @@ $bc_hover: #7d7937
   text-align: center
 
 %service__title
-  font-family: 'Garamond'
+  font-family: 'Garamond', sans-serif
   font-size: 3em
   line-height: 1.11em
   transition: all .3s ease-in-out
@@ -74,15 +75,17 @@ $bc_hover: #7d7937
     .service__title_arrow
       right: -170px
 %service__descr
-  font-family: "Core Sans N"
+  font-family: "Core Sans N", sans-serif
   font-size: 1.9em
   line-height: 1em
   text-align: left
   border: solid 1px
   position: relative
-  left: -190%
-  height: 0px
-  transition: all .5s ease-in-out
+  transition: all .6s ease-in-out
+  opacity: 1
+  padding: 25px
+  left: 0
+  height: 100%
 .active
   text-decoration: underline
   color: #7d7937

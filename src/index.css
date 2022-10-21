@@ -7,11 +7,22 @@ body {
   color: #BBB573;
   box-sizing: border-box;
   font-size: 19px;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
 }
+
+html{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -34,4 +45,5 @@ ul {
   max-width: 900px;
   text-align: center;
   margin: 0 auto;
+  padding: 0 15px;
 }

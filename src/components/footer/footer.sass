@@ -9,8 +9,9 @@
     position: relative
   &__eng
     position: absolute
-    top: -50%
-    right: -30%
+    top: -5vh
+    right: -25vw
+    width: 21vw
   &__subtitle
     @extend %main-title
     font-size: 2em
@@ -23,7 +24,9 @@
     color: $bc
     text-decoration: none
     cursor: pointer
-
+    transition: all .3s ease-in-out
+    &:hover
+      color: $bc_hover
   &__tel
     display: block
     @extend %main-title
@@ -32,9 +35,16 @@
     color: $bc
     text-decoration: none
     cursor: pointer
+    transition: all .3s ease-in-out
+    &:hover
+      color: $bc_hover
 
 .social
   &__wrapp
     display: flex
     justify-content: center
     gap: 50px
+  &__icon
+    transition: all .3s ease-in-out
+    &:hover
+      opacity: .7

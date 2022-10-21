@@ -22,11 +22,12 @@
     font-size: 1.84em
     text-align: center
     position: relative
+    display: inline-block
   &__eng
     position: absolute
     bottom: -300%
-    right: -40%
-
+    right: -25vw
+    width: 21vw
 .about
   &__bottom-text
     padding: 0 55px
@@ -37,8 +38,9 @@
     position: relative
   &__name_eng
     position: absolute
-    right: -38%
-    top: -113%
+    left: 70%
+    top: -115%
+    width: 29vw
   &__quotes
     position: absolute
     top: -40%
@@ -56,26 +58,27 @@
     position: relative
   &__eng
     position: absolute
-    top: -32%
-    right: -25%
-
+    top: -5vh
+    right: -26vw
+    width: 17vw
 .portfolio
   &__title
     @extend %main-title
     position: relative
   &__eng
     position: absolute
-    top: -100%
-    right: -25%
-
+    top: -5vh
+    right: -23vw
+    width: 16.5vw
 .reviews
   &__title
     @extend %main-title
     position: relative
   &__eng
     position: absolute
-    top: -100%
-    right: -25%
+    top: -5vh
+    right: -28vw
+    width: 19.5vw
   &__carousel
     position: relative
     &_left
@@ -88,6 +91,10 @@
       cursor: pointer
       background-color: $bc
       border-radius: 100%
+      transition: all .3s ease-in-out
+      &:hover
+        opacity: .7
+        left: -.5%
     &_rigth
       padding: 5px 7px 5px 4px
       height: 35px
@@ -99,12 +106,16 @@
       transform: rotate(180deg)
       cursor: pointer
       background-color: $bc
+      transition: all .3s ease-in-out
+      &:hover
+        opacity: .7
+        right: -.5%
   &__carousel_wrapp
-    display: flex
     justify-content: center
     align-items: center
     min-height: 600px
     height: 100%
+    display: flex
   &__text
     max-width: 350px
     text-align: left
@@ -114,9 +125,11 @@
     max-width: 350px
     &_wrapp
       height: 100%
+      width: 45%
+
 
 .blog
-  padding: 70px 0
+  padding: 54px 20px 100px
   min-height: 730px
   background-color: $bc
   color: #020202
@@ -125,8 +138,9 @@
     position: relative
   &__eng
     position: absolute
-    top: -50%
-    right: -15%
+    top: -2vh
+    right: -29vw
+    width: 13.5vw
   &__contents
     height: 100%
     min-height: 420px

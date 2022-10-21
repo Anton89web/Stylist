@@ -2,6 +2,8 @@
 
 .service
   margin-bottom: 70px
+  height: fit-content
+  transition: all 1s ease
   &__title
     @extend %service__title
     position: relative
@@ -16,35 +18,39 @@
   &__descr
     @extend %service__descr
     &_close
-      margin-left: 95%
-      display: inline-block
-      text-align: right
-      font-size: 1em
       cursor: pointer
-      transition: all .3s ease-in-out
+      transition: all 0.3s ease-in-out
+      position: absolute
+      right: 15px
+      top: 15px
+      height: 30px
+      display: flex
       &:hover
-        color: $bc_hover
+        opacity: .7
     &_text
       padding-bottom: 20px
     &_price
-      left: -190%
-      transition: all .7s ease-in-out
-      height: 0px
+      transition: all 1s ease-in-out
       position: relative
+      opacity: 1
+      left: 0
 .price
-  font-family: 'Garamond'
+  font-family: 'Garamond', sans-serif
   font-size: 3.57em
   &__wrapper
     display: flex
     align-items: baseline
     justify-content: center
-    padding-bottom: 15px
+    padding: 15px 0
     position: relative
+    overflow: hidden
   &__condition
-    font-family: 'Garamond'
+    font-family: 'Garamond', sans-serif
     font-size: 2em
-    padding: 0 45px
-.open
-  left: 0
-  height: 100%
-  padding: 15px
+    padding: 0 20px
+.hidden
+  //opacity: 0
+  padding: 0
+  font-size: 0
+  height: 0
+  overflow: hidden
