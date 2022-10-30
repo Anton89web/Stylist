@@ -4,9 +4,14 @@ import PortfolioFoto from "../../components/portfolio_foto/PortfolioFoto";
 import { NavLink } from "react-router-dom";
 import "./mainPage.sass"
 import Carousel from "../../components/carousel/Carousel";
+import BlogPage from "../blog/BlogPage";
 
 const Main = () => {
-
+// function scrollToContacts(){
+//   window.scrollTo({
+//   top: document.body.scrollHeight,
+//   behavior: 'smooth'
+// })}
   return  (
     <div className="main">
     <div className="subheader">
@@ -34,18 +39,14 @@ const Main = () => {
       <img className="name__eng" src="media/icons/about.svg" alt=""/>
       </p>
     </div>
-    <About btn={true}/>
+    <About title={true} btn={true}/>
     <div className="center_container">
       <p className="about__bottom-text">
         <img className="about__name_eng" src="media/icons/name.svg" alt=""/>
         <img className="about__quotes" src="media/icons/,,.svg" alt=""/>
         Открывая передо мной свой гардероб, вы открываете частичку себя, взамен я отдаю вам все что знаю и умею, а главное - помогаю обрести себя через стиль
+        <img className="about__quotes_down" src="media/icons/,,.svg" alt=""/>
       </p>
-    </div>
-    <div className="about__footer">
-      <div className="container">
-        <Btn/>
-      </div>
     </div>
 
   <section className="services">
@@ -96,9 +97,7 @@ const Main = () => {
       <img className="blog__eng" src="media/icons/blog.svg" alt=""/>
     </h3>
     <div className="blog__contents">
-      <div className="blog__img"></div>
-      <div className="blog__img"></div>
-      <div className="blog__img"></div>
+        <BlogPage main={true}/>
     </div>
     <NavLink to="/blog">
       <Btn/>

@@ -1,7 +1,7 @@
 @import "../../styles/variables.sass"
 
 .footer
-  padding-top: 90px
+  padding-top: 40px
 
 .contacts
   &__title
@@ -9,26 +9,28 @@
     position: relative
   &__eng
     position: absolute
-    top: -5vh
+    top: -3.5vh
     right: -25vw
-    width: 21vw
+    width: 22vw
   &__subtitle
     @extend %main-title
     font-size: 2em
-    line-height: 1.12em
+    line-height: .9em
+    margin: 0
   &__mail
-    display: block
+    display: inline-block
     @extend %main-title
     font-size: 2.84em
-    line-height: 1.12em
+    line-height: 1.4em
     color: $bc
     text-decoration: none
     cursor: pointer
     transition: all .3s ease-in-out
+    margin-bottom: 0
     &:hover
       color: $bc_hover
   &__tel
-    display: block
+    display: inline-block
     @extend %main-title
     font-size: 2.6em
     line-height: 1em

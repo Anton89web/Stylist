@@ -1,18 +1,55 @@
 import "./blogPage.sass"
+import BlogCard from "../../components/blog_card/BlogCard";
+import {useEffect, useState} from "react";
 
 
 
 
-const Blog = () =>{
+const Blog = ({main}) =>{
+  let aCards
+  const[blog, setBlog] = useState();
+  const[loading, setLoading] = useState(false)
+
+  function showFull(i){
+    const element = document.querySelectorAll('.card__full')[i]
+    const html = document.querySelector("html")
+    element.classList.add('show__full_card');
+    element.style.top=`${html.scrollTop + 'px'}`
+    // element.style.height=`${html.height +'px'}`
+    html.style.overflow='hidden';
+  }
+
+  function hiddenFull(i){
+    const element = document.querySelectorAll('.card__full')[i]
+    const html = document.querySelector("html")
+    element.classList.remove('show__full_card');
+    element.style.top=`${'-150%'}`
+    html.style.overflow=''
+  }
+
+  useEffect(() => {
+    fetch("dataBase/blog.json")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          setLoading(true)
+          aCards = (main? result.slice(0, 3) : result.slice(0, 6))
+          setBlog(aCards)
+        },
+        (error) => {
+          alert(error);
+        }
+      )
+  },[])
   return (
+    loading ?
     <div className="center_container">
-      <h2 className="blog__name">BLOG</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, eos est quia quidem quo ratione tempore voluptates voluptatibus! Alias eaque eligendi excepturi harum ipsam iure natus perferendis quibusdam, quos repudiandae!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eius expedita laborum qui reprehenderit vel. Adipisci assumenda expedita ipsum laboriosam magni maxime molestias numquam odio quasi sapiente sequi, veniam!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam architecto asperiores delectus facilis inventore minus quae veritatis, voluptas voluptate! At consequuntur esse exercitationem hic laborum perspiciatis quam quis sint!
-      </p>
+     <div className="blog__grid">
+       {blog.map((e , i) => (
+  <BlogCard slice={false} key={i} text={e.text} img={e.img} time={e.time} show={()=>showFull(i)} hidden={()=>hiddenFull(i)}/>))}
+     </div>
     </div>
+      : <h1>ЗАГРУЖАЕТСЯ...</h1>
 )
 }
 

@@ -1,10 +1,5 @@
 @import "../../styles/variables"
 
-.main
-  display: flex
-  flex-direction: column
-  gap: 100px
-
 .subheader
   &__wrapper
     @extend %flex-bw
@@ -14,77 +9,89 @@
 
 .name
   &__title
-    font-family: 'Garamond', serif
+    font-family: "Cormorant Garamond", serif
     font-size: 4.37em
     text-align: center
+    margin-top: 40px
+    margin-bottom: 30px
   &__subtitle
-    font-family: 'Core Sans N'
+    font-family: 'Open Sans', sans-serif
     font-size: 1.84em
     text-align: center
     position: relative
     display: inline-block
+    margin-bottom: 3.9em
   &__eng
     position: absolute
-    bottom: -300%
-    right: -25vw
-    width: 21vw
+    bottom: -575%
+    right: -26vw
+    width: 22vw
 .about
   &__bottom-text
     padding: 0 55px
-    font-family: 'Garamond'
+    font-family: 'Cormorant Garamond', serif
     font-size: 1.73em
-    line-height: 1.12em
+    line-height: 1.3em
     text-align: center
     position: relative
+    margin-top: 12%
+    margin-bottom: 12%
   &__name_eng
     position: absolute
-    left: 70%
-    top: -115%
+    left: 73%
+    top: -100%
     width: 29vw
   &__quotes
     position: absolute
-    top: -40%
-    left: 50%
+    top: -33%
+    left: 48%
+    &_down
+      position: absolute
+      left: 48%
+      bottom: -33%
+      transform: rotate(180deg)
   &__footer
     background-color: $bc
     height: 350px
-
+    display: flex
 .services
   &__title
     @extend %main-title
   &__descr
-    height: 665px
+    height: 635px
     background: #D9D9D9
     position: relative
   &__eng
     position: absolute
-    top: -5vh
-    right: -26vw
+    top: -4vh
+    right: -22vw
     width: 17vw
 .portfolio
+  margin-top: 5%
   &__title
     @extend %main-title
     position: relative
   &__eng
     position: absolute
-    top: -5vh
-    right: -23vw
+    top: -5vw
+    right: -22vw
     width: 16.5vw
 .reviews
+  margin-top: 5%
   &__title
     @extend %main-title
     position: relative
   &__eng
     position: absolute
-    top: -5vh
-    right: -28vw
-    width: 19.5vw
+    top: -4vh
+    right: -30vw
+    width: 20vw
   &__carousel
     position: relative
     &_left
       padding: 5px 7px 5px 4px
-      height: 35px
-      width: 35px
+      height: 40px
+      width: 40px
       position: absolute
       left: 0
       bottom: 50%
@@ -97,8 +104,8 @@
         left: -.5%
     &_rigth
       padding: 5px 7px 5px 4px
-      height: 35px
-      width: 35px
+      height: 40px
+      width: 40px
       border-radius: 100%
       position: absolute
       right: 0
@@ -116,6 +123,7 @@
     min-height: 600px
     height: 100%
     display: flex
+    margin-bottom: 7%
   &__text
     max-width: 350px
     text-align: left
@@ -129,13 +137,13 @@
 
 
 .blog
-  padding: 54px 20px 100px
+  padding: 0px 20px 100px
   min-height: 730px
-  background-color: $bc
   color: #020202
   &__title
     @extend %main-title
     position: relative
+    margin-bottom: 50px
   &__eng
     position: absolute
     top: -2vh
@@ -144,8 +152,3 @@
   &__contents
     height: 100%
     min-height: 420px
-    display: grid
-    grid-template-columns: repeat(3, 1fr)
-    gap: 75px
-  &__img
-    background-color: #D9D9D9

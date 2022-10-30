@@ -4,19 +4,20 @@ import { NavLink } from "react-router-dom";
 import "./about.sass"
 
 
-const About = ({btn, text1, text2, list, fz}) => {
+const About = ({title, btn, text1, text2, list, fz, img}) => {
 
   return (
     <div className="center_container">
       <div className="about">
-        <h3 className="about__title">
+         {title? <h3 className="about__title">
           ОБО МНЕ
-        </h3>
+        </h3>:
+        "" }
         <div className="about__descr">
-          <img src="media/img/main/header/6.jpg" alt="" className="descr__img" />
+          <img src={img? img : "media/img/main/header/6.jpg"} alt="" className="descr__img" />
           <div className="descr__text_wrapp" style={{fontSize: fz || '1em'}}>
             <p className="descr__text">
-            Меня зовут Диана Смирнова. 
+            Меня зовут Диана Смирнова.<br/>
             Я - практикующий женский и мужской стилист. Выпускница Fashion-академии PSFA, участница многочисленных образовательных проектов  от топ стилистов Александра Рогова, Арсена 
             Айрапетова, Self Made Studio, Леси Пятибратовой, Насти Ножиной.
             </p>
@@ -32,7 +33,7 @@ const About = ({btn, text1, text2, list, fz}) => {
             {list ? list : ""}
             {btn ? 
               <NavLink to="/about" >
-                <Btn mt={'100px'}/>
+                <Btn mt={'20px'}/>
               </NavLink>
              : ""}
           </div>

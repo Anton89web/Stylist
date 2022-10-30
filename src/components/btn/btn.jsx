@@ -1,8 +1,10 @@
 import './btn.sass'
 
-const Btn = ({text, mt, ml})=> {
+const Btn = ({scroll ,text, mt, ml})=> {
+
   return (
-    <button className="btn" style={{marginTop: mt || '80px', marginLeft: ml || 'auto'} }>
+    <button className="btn" style={{marginTop: mt || '80px', marginLeft: ml || 'auto'}}
+            onClick={scroll?  ()=> scroll() : ()=>false}>
       {text || "ПОДРОБНЕЕ"}
     </button>
   )

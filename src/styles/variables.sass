@@ -1,6 +1,7 @@
 
 $bc: #BBB573
 $bc_hover: #7d7937
+$btn_hover: #ada75d
 
 %img
   width: 100%
@@ -13,30 +14,32 @@ $bc_hover: #7d7937
   align-items: center
 
 %nav
-  font-family: 'Myriad Pro', sans-serif
+  font-family: 'Cormorant Garamond', serif
   font-style: normal
   font-weight: 400
-  font-size: 1.43em
+  font-size: 1.2em
   cursor: pointer
   text-decoration: none
   color: $bc
 
 %main-title
-  font-family: 'Garamond', serif
+  font-family: "Cormorant Garamond", serif
   font-style: normal
   font-weight: 400
   font-size: 4.1em
   line-height: 1.12em
   position: relative
   margin-bottom: 1em
+  margin-top: .7em
   display: inline-block
+  color: #bbb573
 
 %main-text
-  font-family: 'Core Sans N', sans-serif
+  font-family: 'Open Sans', sans-serif
   font-style: normal
   font-weight: 400
   font-size: 1em
-  line-height: 1.1em
+  line-height: 1.3em
   text-align: left
   margin-bottom: 15px
 
@@ -44,26 +47,31 @@ $bc_hover: #7d7937
   display: flex
   align-items: center
   justify-content: center
-  font-family: 'Garamond'
+  font-family: 'Cormorant Garamond', serif
   font-size: 1.15em
   line-height: 1.13em
   max-width: 250px
   width: 100%
   height: 60px
-  background-color: $bc
-  border: solid 2px #181818
+  border: 2px solid $bc
+  background-color: #181818
   cursor: pointer
   transition: all .3s ease-in-out
+  color: $bc
+  &:hover
+    background-color: $bc
+    color: #181818
+    border: 2px solid #181818
 
 %portfolio__card_title
-  font-family: 'Garamond'
+  font-family: 'Cormorant Garamond', serif
   font-size: 3.47em
   line-height: 1.12em
   text-align: center
 
 %service__title
-  font-family: 'Garamond', sans-serif
-  font-size: 3em
+  font-family: 'Cormorant Garamond', serif
+  font-size: 2em
   line-height: 1.11em
   transition: all .3s ease-in-out
   text-align: left
@@ -72,20 +80,35 @@ $bc_hover: #7d7937
   margin-bottom: 10px
   &:hover
     color: $bc_hover
-    .service__title_arrow
-      right: -170px
 %service__descr
-  font-family: "Core Sans N", sans-serif
-  font-size: 1.9em
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  font-family: 'Open Sans', sans-serif
+  font-size: 1.5em
   line-height: 1em
   text-align: left
-  border: solid 1px
-  position: relative
+  position: absolute
   transition: all .6s ease-in-out
   opacity: 1
-  padding: 25px
+  padding: 0 25vw
   left: 0
-  height: 100%
+  top: 0
+  width: 100%
+  min-height: 100%
+  z-index: 999
+  backdrop-filter: blur(15px)
+  overflow: scroll
 .active
   text-decoration: underline
   color: #7d7937
+
+%about__text
+  font-family: 'Open Sans' , sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: .8em
+  line-height: 1.33em
+  text-align: left
+  padding: 5% 0

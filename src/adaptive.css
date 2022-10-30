@@ -1,0 +1,464 @@
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 16px;
+    }
+
+    .nav__links {
+        padding: 4vw 0;
+    }
+
+    .name__subtitle {
+        margin-bottom: 2em;
+    }
+
+    .name__eng {
+        bottom: -15vw;
+        right: -22vw;
+    }
+
+    .about__name_eng {
+        position: absolute;
+        left: 66%;
+        top: -61%;
+        width: 30vw;
+    }
+
+    .portfolio__eng {
+        top: -7vw;
+        width: 19.5vw;
+    }
+
+    .reviews__carousel_left {
+        height: 35px;
+        width: 35px;
+        left: -2%;
+    }
+
+    .reviews__carousel_rigth {
+        height: 35px;
+        width: 35px;
+        right: -2%;
+    }
+
+    .blog__grid {
+        gap: 50px;
+    }
+
+    .blog {
+        padding: 0 0 60px;
+        min-height: 730px;
+        color: #020202;
+    }
+
+    .service__descr {
+        padding: 0px 10vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 15px;
+    }
+
+    .about__descr {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .name__eng {
+        right: -4vw;
+    }
+
+    .about__name_eng {
+        top: -87%;
+        left: 58%;
+        width: 40vw;
+    }
+
+    .btn {
+        max-width: 200px;
+        height: 50px;
+        margin-top: 60px;
+    }
+
+    .about__quotes {
+        top: -12%;
+    }
+
+    .about__quotes_down {
+        bottom: -16%;
+    }
+
+    .about__bottom-text {
+        padding: 0
+    }
+
+    .services__eng {
+        width: 30vw;
+    }
+
+    .blog__title,
+    .reviews__title,
+    .portfolio__title,
+    .services__title {
+        margin-top: 1.7em;
+    }
+
+    .portfolio__eng {
+        top: -11vw;
+        width: 30vw;
+        right: -5vw;
+    }
+
+    .reviews__eng {
+        top: -4vh;
+        right: -20vw;
+        width: 30vw;
+    }
+
+    .reviews__carousel_wrapp {
+        min-height: 500px;
+        margin-bottom: 0;
+        flex-wrap: wrap-reverse;
+    }
+
+    .reviews__text {
+        max-width: 450px;
+    }
+
+    .descr__img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .blog__eng {
+        top: -6vh;
+        width: 25vw;
+    }
+
+    .blog__grid {
+        gap: 20px;
+        margin-left: -10px;
+    }
+
+    .contacts__eng {
+        top: -4.5vh;
+        right: -11vw;
+        width: 30vw;
+    }
+
+    .contacts__eng {
+        position: absolute;
+        top: -4.5vh;
+        right: -11vw;
+        width: 30vw;
+    }
+
+    .portfolio__card_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio__card_descr {
+        font-size: 1.6em;
+    }
+
+    .blog__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .container,
+    .center_container {
+        padding: 0 15px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .header {
+        margin-bottom: 80px;
+    }
+
+    .name__title {
+        font-size: 4em;
+    }
+
+    .name__eng {
+        right: -5vw;
+        width: 30vw;
+        top: 18vw;
+    }
+
+    .about__name_eng {
+        top: -37vw;
+        left: 48%;
+        width: 50vw;
+    }
+
+    .nav__links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        font-size: 1.2em;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, .8);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        display: none;
+        position: absolute;
+        padding: 15px;
+    }
+
+    .portfolio__categoria_link {
+        max-width: 150px;
+    }
+
+    .portfolio__title {
+        font-size: 3.5em;
+    }
+
+    .about__bottom-text {
+        line-height: 1em;
+    }
+
+    .blog__title,
+    .reviews__title,
+    .portfolio__title,
+    .services__title {
+        margin-top: 1.5em;
+    }
+
+    .services__eng {
+        top: -4vh;
+        right: -16vw;
+        width: 32vw;
+    }
+
+    .service__descr {
+        padding: 0px 10vw;
+        font-size: 1.2em;
+    }
+
+    .portfolio__eng {
+        top: -12vw;
+        width: 32vw;
+        right: -2vw;
+    }
+
+    .portfolio__categoria_links {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .reviews__eng {
+        right: -14vw;
+        width: 32vw;
+    }
+
+    .reviews__carousel_left {
+        height: 30px;
+        width: 30px;
+        left: -3%;
+    }
+
+    .reviews__carousel_rigth {
+        height: 30px;
+        width: 30px;
+        right: -3%;
+    }
+
+    .reviews__img {
+        max-width: 280px;
+    }
+
+    .reviews__img_wrapp {
+        width: 100%;
+    }
+
+    .reviews__carousel_wrapp {
+        min-height: 450px;
+    }
+
+    .blog {
+        padding: 0 0 30px;
+    }
+
+    .blog__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog__card {
+        min-height: 360px;
+    }
+
+    .blog__eng {
+        top: -5vh;
+        right: -27vw;
+    }
+
+    .card__full_text,
+    .blog__data,
+    .blog__text {
+        font-size: 1.3em;
+        line-height: 1.3em;
+    }
+
+    .contacts__eng {
+        right: -7vw;
+        width: 34vw;
+    }
+
+    .contacts__mail {
+        font-size: 2.6em;
+    }
+
+    .contacts__title {
+        margin-bottom: .5em;
+    }
+
+    .footer {
+        margin-top: 1em;
+        padding-top: 15px;
+    }
+
+    .footer__dscr:before {
+        top: -20%;
+    }
+
+    .portfolio__card_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 5%;
+        padding: 0;
+    }
+
+    .service__title_img {
+        max-height: 210px;
+    }
+
+    .service__title {
+        padding-top: 5%;
+    }
+
+    .portfolio__card_subtitle {
+        font-size: 2.5em;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .subheader__wrapper {
+        gap: 5px;
+    }
+
+    .name__title {
+        font-size: 3.3em;
+    }
+
+    .name__subtitle {
+        margin-bottom: 1em;
+    }
+
+    .name__eng {
+        right: -2vw;
+        width: 30vw;
+        top: 23vw;
+    }
+
+    .about__title {
+        margin-bottom: .8em;
+    }
+
+    .about__name_eng {
+        top: -42vw;
+        left: 43%;
+        width: 55vw;
+    }
+
+    .services__eng {
+        top: -4vh;
+        right: -11vw;
+        width: 40vw;
+    }
+
+    .btn {
+        margin-top: 50px !important;
+    }
+
+    .portfolio__title {
+        font-size: 3em;
+    }
+
+    .portfolio__eng {
+        top: -14vw;
+        width: 35vw;
+        right: -4vw;
+    }
+
+    .reviews__eng {
+        right: -10vw;
+        width: 40vw;
+        top: -15vw;
+    }
+
+    .services__eng {
+        top: -9vh;
+        right: -17vw;
+        width: 40vw;
+    }
+
+    .reviews__carousel_left {
+        left: -3%;
+    }
+
+    .reviews__carousel_rigth {
+        right: -3%;
+    }
+
+    .blog__eng {
+        top: -17vw;
+        right: -26vw;
+        width: 30vw;
+    }
+
+    .blog__grid {
+        margin-left: 0px;
+    }
+
+    .contacts__title {
+        font-size: 3em;
+    }
+
+    .contacts__mail {
+        font-size: 2.1em;
+    }
+
+    .contacts__eng {
+        top: -14vw;
+        right: -11vw;
+        width: 40vw;
+    }
+
+    .service__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 5%;
+        padding: 0;
+    }
+
+    .portfolio__card_descr {
+        font-size: 1.3em;
+    }
+}

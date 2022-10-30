@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Myriad Pro', 'Garamond', 'Core Sans N', sans-serif;
+  font-family: 'Cormorant Garamond', 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #181818;
@@ -39,11 +39,12 @@ ul {
   width: 100%;
   padding: 0 30px;
   margin: 0 auto;
+  position: relative;
 }
 
 .center_container {
-  max-width: 900px;
+  max-width: 940px;
   text-align: center;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }

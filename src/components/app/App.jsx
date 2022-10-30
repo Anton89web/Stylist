@@ -7,12 +7,14 @@ import Portfolio from "../../pages/portfolio/PortfolioPage";
 import Blog from "../../pages/blog/BlogPage";
 import Contacts from "../../pages/contacts/ContactsPage";
 import Footer from "../footer/Footer";
+import Scrolltotop from "../scroll_to_top/ScrollToTop";
 
 
 const App = ()=>{
   return(
   <>
     <Header/>
+    <Scrolltotop/>
     <Routes>
       <Route path="" element={<Main/>}/>
       <Route path="main" element={<Main/>}/>

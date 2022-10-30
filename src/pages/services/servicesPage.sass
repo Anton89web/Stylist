@@ -1,16 +1,47 @@
 @import "../../styles/variables"
 
 .service
-  margin-bottom: 70px
-  height: fit-content
-  transition: all 1s ease
-  &__title
-    @extend %service__title
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  text-align: left
+  gap: 15px
+  cursor: pointer
+  transition: all .3s ease-in-out
+  overflow: hidden
+  &:hover
+    transform: scale(1.02)
+    .service__title_arrow
+      max-width: 60px
+    .service__title_img
+      transform: scale(1.03)
+  &__grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 45px
+    margin-top: 5%
+    align-items: end
+    padding: 0 5%
     position: relative
+  &__subtitle
+    font-size: .8em
+    padding: 0 25px 0 0
+    display: inline-block
+    line-height: 0
+    &_wrapp
+      display: flex
+      align-items: center
+  &__title
+    @extend %nav
+    line-height: 1em
+    padding-top: 10%
+    &_img
+      width: 100%
+      max-height: 300px
+      object-fit: fill
+      transition: all .5s ease-in-out
     &_arrow
-      position: absolute
-      top: 25%
-      right: -150px
+      max-width: 50px
       transition: all .3s ease-in-out
     &_wrapper
       cursor: pointer
@@ -20,23 +51,26 @@
     &_close
       cursor: pointer
       transition: all 0.3s ease-in-out
-      position: absolute
-      right: 15px
-      top: 15px
-      height: 30px
+      position: relative
+      right: -50%
+      top: -2%
+      height: 3%
+      width: 4%
       display: flex
       &:hover
         opacity: .7
+        top: -3%
     &_text
-      padding-bottom: 20px
+      padding: 20px 0
     &_price
-      transition: all 1s ease-in-out
+      transition: all .6s ease-in-out
       position: relative
       opacity: 1
       left: 0
+      margin-top: 5%
 .price
   font-family: 'Garamond', sans-serif
-  font-size: 3.57em
+  font-size: 1.89em
   &__wrapper
     display: flex
     align-items: baseline
@@ -46,11 +80,18 @@
     overflow: hidden
   &__condition
     font-family: 'Garamond', sans-serif
-    font-size: 2em
+    font-size: 1em
     padding: 0 20px
 .hidden
-  //opacity: 0
+  top: -150%
+  opacity: 0
   padding: 0
   font-size: 0
   height: 0
+  //display: none
+
+.relative
+  position: relative
+
+.html_hidden
   overflow: hidden
