@@ -1,5 +1,4 @@
 import "./blog_card.sass"
-import {useEffect, useState} from "react";
 
 
 const BlogCard = ({ show, hidden, img, text, time}) => {

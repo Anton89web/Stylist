@@ -21,6 +21,8 @@ $btn_hover: #ada75d
   cursor: pointer
   text-decoration: none
   color: $bc
+  padding: 5px
+  border-radius: 5px
 
 %main-title
   font-family: "Cormorant Garamond", serif
@@ -96,10 +98,12 @@ $btn_hover: #ada75d
   left: 0
   top: 0
   width: 100%
-  min-height: 100%
+  min-height: fit-content
+  height: 100%
   z-index: 999
   backdrop-filter: blur(15px)
   overflow: scroll
+  background-color: rgba(0, 0, 0, 0.7)
 .active
   text-decoration: underline
   color: #7d7937

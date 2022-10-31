@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import './header.sass'
 
 
-const Header = () => {
+const Header = ({burger}) => {
   function showMenu(){
     document.querySelector(".nav__links").classList.toggle("show_menu")
     const row = document.querySelectorAll(".burger__row")
@@ -51,11 +51,11 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <div className="burger"  onClick={()=> (showMenu(), scrollToMenu())}>
+        {burger ? "" : <div className="burger"  onClick={()=> (showMenu(), scrollToMenu())}>
           <span className="burger__row"></span>
           <span className="burger__row"></span>
           <span className="burger__row"></span>
-        </div>
+        </div>}
       </div>
     </div>
   )

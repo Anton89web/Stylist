@@ -25,7 +25,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <Header/>
+      <Header burger={true}/>
     </footer>
   )
 } 

@@ -11,13 +11,14 @@
     margin: 0
   &__link
     @extend %nav
-    transition: all .3s ease-in-out
+    transition: all .5s ease-in-out
     &:hover
-      color: $bc_hover
+      background-color: $bc
+      color: #181818
 .active_link
   @extend %nav
-  text-decoration: underline
-  color: $bc_hover
+  color: #181818
+  background-color: $bc
 
 .burger
   display: none

@@ -97,7 +97,7 @@ const Main = () => {
       <img className="blog__eng" src="media/icons/blog.svg" alt=""/>
     </h3>
     <div className="blog__contents">
-        <BlogPage main={true}/>
+        <BlogPage main={true} pagination={true}/>
     </div>
     <NavLink to="/blog">
       <Btn/>

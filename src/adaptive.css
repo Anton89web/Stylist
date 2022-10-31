@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 750px) {
     body {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .about__descr {
@@ -167,6 +167,11 @@
         gap: 25px;
     }
 
+    .price__wrapper {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -213,7 +218,7 @@
         width: 100%;
         display: none;
         position: absolute;
-        padding: 15px;
+        padding: 25px 15px;
     }
 
     .portfolio__categoria_link {
@@ -242,8 +247,9 @@
     }
 
     .service__descr {
-        padding: 0px 10vw;
+        padding: 10vw 5vw;
         font-size: 1.2em;
+        justify-content: flex-start;
     }
 
     .portfolio__eng {
@@ -268,9 +274,19 @@
         left: -3%;
     }
 
+    .reviews__carousel_left:hover {
+        left: -3%;
+        opacity: 1;
+    }
+
     .reviews__carousel_rigth {
         height: 30px;
         width: 30px;
+        right: -3%;
+    }
+
+    .reviews__carousel_rigth:hover {
+        opacity: 1;
         right: -3%;
     }
 
@@ -414,7 +430,7 @@
     }
 
     .services__eng {
-        top: -9vh;
+        top: -9vw;
         right: -17vw;
         width: 40vw;
     }
