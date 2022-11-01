@@ -3,12 +3,13 @@
 .service
   display: flex
   flex-direction: column
-  justify-content: space-between
+  justify-content: space-around
   text-align: left
   gap: 15px
   cursor: pointer
   transition: all .3s ease-in-out
   overflow: hidden
+  min-height: 100px
   &:hover
     transform: scale(1.02)
     .service__title_arrow
@@ -17,8 +18,9 @@
       transform: scale(1.03)
   &__grid
     display: grid
-    grid-template-columns: repeat(2, 1fr)
-    gap: 45px
+    grid-template-columns: repeat(3, 1fr)
+    column-gap: 37px
+    row-gap: 25px
     margin-top: 5%
     align-items: end
     padding: 0 5%
@@ -34,7 +36,6 @@
   &__title
     @extend %nav
     line-height: 1em
-    padding-top: 10%
     &_img
       width: 100%
       max-height: 300px
@@ -95,3 +96,9 @@
 
 .html_hidden
   overflow: hidden
+
+#img
+  grid-column: 2/3
+  grid-row: 1/5
+  height: 90%
+  margin: auto 0

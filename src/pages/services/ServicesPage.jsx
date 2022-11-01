@@ -41,8 +41,8 @@ const Services = () => {
   return (
   <section className="services">
     <div className="center_container relative">
-      <img src="/media/img/main/header/1.jpg" alt="" />
       <div className="service__grid">
+      <img id="img" src="/media/img/main/header/1.jpg" alt="" />
         {loading? state.map((e, i)=>(
           <Service title={e.name} descr={e.descr} fnc={open} arg={i} key={i}/>
         ))

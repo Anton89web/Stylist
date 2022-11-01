@@ -44,7 +44,7 @@ const Blog = ({main, pagination}) =>{
       .then(res => res.json())
       .then(
         (result) => {
-          setLoading(true);
+          setLoading(true)
           setBlogs(result)
         },
         (error) => {

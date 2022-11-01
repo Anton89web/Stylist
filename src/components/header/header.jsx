@@ -10,11 +10,6 @@ const Header = ({burger}) => {
     row[1].classList.toggle("row_middle")
     row[2].classList.toggle("row_bottom")
   }
-  function scrollToMenu(){
-  window.scrollTo({
-  top: document.body.scrollTop,
-  behavior: 'smooth'
-})}
   const setActive = ({isActive}) => isActive ? "active_link" : "nav__link";
   return (
     <div className="header">
@@ -51,7 +46,7 @@ const Header = ({burger}) => {
             </NavLink>
           </li>
         </ul>
-        {burger ? "" : <div className="burger"  onClick={()=> (showMenu(), scrollToMenu())}>
+        {burger ? "" : <div className="burger"  onClick={()=> (showMenu())}>
           <span className="burger__row"></span>
           <span className="burger__row"></span>
           <span className="burger__row"></span>
