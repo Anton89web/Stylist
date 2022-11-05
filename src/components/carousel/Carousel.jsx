@@ -12,8 +12,7 @@ fetch("dataBase/reviews.json")
 .then(res => res.json())
 .then((res)=> {
 setLoading(true)  
-setSlide(res)
-console.log(res)},
+setSlide(res)},
 (err)=> {alert(err)}
 )},[])
 

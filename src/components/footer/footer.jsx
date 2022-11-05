@@ -16,6 +16,10 @@ const Footer = () => {
         <a className="contacts__mail" href="mailto:sdiana070@gmail.com">sdiana070@gmail.com</a>
         <br/>
         <a className="contacts__tel" href="tel:+7 (906) 307 73 03">+7 (906) 307 73 03</a>
+        <br />
+        <a className="contacts__whatsapp" href="https://wa.me/79063077303">
+          Написать в Whatsapp
+        </a>
         <div className="social__wrapp">
           <a className="social__icon" href="https://instagram.com/vstile.di" target="_blank">
             <img src="media/icons/insta.svg" alt="" />

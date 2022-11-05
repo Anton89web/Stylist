@@ -389,7 +389,7 @@
 
     .service__grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 0;
         margin-top: 5%;
         padding: 0;
     }
@@ -513,11 +513,6 @@
         width: 40vw;
     }
 
-    .service__grid {
-        gap: 20px;
-        margin-top: 5%;
-        padding: 0;
-    }
 
     .portfolio__card_descr {
         font-size: 1.3em;

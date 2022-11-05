@@ -15,29 +15,36 @@ const Blog = ({main, pagination}) =>{
   function showFull(i){
     const element = document.querySelectorAll('.card__full')[i]
     const html = document.querySelector("html")
+    const body = document.querySelector("body")
     element.classList.add('show__full_card');
     element.style.top=`${html.scrollTop + 'px'}`
-    html.style.overflow='hidden';
+    body.style.overflow='hidden';
   }
 
-  function hiddenFull(i){
+  function hiddenFull(i, e){
     const element = document.querySelectorAll('.card__full')[i]
     const html = document.querySelector("html")
-    element.classList.remove('show__full_card');
-    element.style.top=`${'-150%'}`
-    html.style.overflow=''
+    const body = document.querySelector("body")
+
+    if(e.target.classList.contains('card__full') ||
+    e.target.classList.contains('card__full_close')){
+      body.style.overflow='';
+      element.classList.remove('show__full_card');
+      element.style.top=`${'-150%'}`
+      html.style.overflow=''
+    }
+    
   }
 
   function changePage(num){
     let i = num
+    window.scrollTo(0, 0)
     if (num < 1) i = 1
     if (num > Math.ceil(blogs.length / 6)) i = num - 1
-      setPage(i)
-      setLast(i * 6);
-      setFirst(i * 6 - 6)
+    setPage(i)
+    setLast(i * 6)
+    setFirst(i * 6 - 6)
   }
-
-  
 
   useEffect(() => {
     fetch("dataBase/blog.json")
@@ -60,7 +67,7 @@ const Blog = ({main, pagination}) =>{
     <div className="center_container">
      <div className="blog__grid">
        {(main? blogs.slice(0, 3) : blogs.slice(firstIndex, lastIndex)).map((e , i) => (
-  <BlogCard  key={i} text={e.text} img={e.img} time={e.time} show={()=>showFull(i)} hidden={()=>hiddenFull(i)}/>))}
+  <BlogCard  key={i} text={e.text} img={e.img} time={e.time} show={()=>showFull(i)} hidden={(e)=>hiddenFull(i, e)}/>))}
      </div> 
 {!pagination? 
  <nav className="pagination__wrapper" aria-label="Навигации по страницам">

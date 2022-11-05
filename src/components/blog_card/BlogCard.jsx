@@ -11,9 +11,9 @@ const BlogCard = ({ show, hidden, img, text, time}) => {
         <div className="blog__text">{text.slice(0, 69) + "..."}</div>
         <div className="blog__data">{time}</div>
       </div>
-      <div className="card__full">
+      <div className="card__full" onClick={e=>hidden(e)}>
         <div className="center_container">
-            <img className="card__full_close" src="media/icons/cross.svg" alt="" onClick={()=>hidden()}/>
+            <img className="card__full_close" src="media/icons/cross.svg" alt="" onClick={e=>hidden(e)}/>
         <div className="card__img_wrapp" >
           <img src={img} alt="" className="card__img"/>
           </div>

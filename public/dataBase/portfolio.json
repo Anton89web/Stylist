@@ -68,16 +68,11 @@
   { "title": "СТИЛИЗАЦИЯ ФОТОСЕССИЙ",
     "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis iure id exercitationem veniam rerum. Quibusdam, tempora suscipit mollitia praesentium perferendis autem, doloremque culpa laudantium placeat totam expedita laborum magni ea.",
     "foto": [
-      "media/img/main/portfolio/men/14.jpg",
-      "media/img/main/portfolio/men/15.jpg",
-      "media/img/main/portfolio/men/16.jpg",
-      "media/img/main/portfolio/men/17.jpg",
-      "media/img/main/portfolio/men/18.jpg",
-      "media/img/main/portfolio/men/19.jpg",
-      "media/img/main/portfolio/men/20.jpg",
-      "media/img/main/portfolio/men/21.jpg",
-      "media/img/main/portfolio/men/22.jpg",
-      "media/img/main/portfolio/men/23.jpg"
+      "media/img/main/portfolio/fotosession/1.jpg",
+      "media/img/main/portfolio/fotosession/2.jpg",
+      "media/img/main/portfolio/fotosession/3.jpg",
+      "media/img/main/portfolio/fotosession/4.jpg",
+      "media/img/main/portfolio/fotosession/5.jpg"
     ]
   }
 ]

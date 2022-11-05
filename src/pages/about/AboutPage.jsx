@@ -13,7 +13,6 @@ const AboutPage = () => {
         (result) => {
           setData(result)
           setLoading(true)
-          console.log(result[0].img)
         },
         (error) => {
           alert(error);

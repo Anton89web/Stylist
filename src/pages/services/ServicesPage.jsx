@@ -5,24 +5,27 @@ import {useEffect, useState} from "react";
 const Services = () => {
   const [state, setState] = useState()
   const [loading, setLoading] = useState(false)
-  const arrDescr =document.querySelectorAll('.service__descr')
+  const arrDescr = document.querySelectorAll('.service__descr')
   const arrPrice = document.querySelectorAll('.service__descr_price')
+  const body = document.querySelector("body")
   const html = document.querySelector("html")
 
   function open(n){
-  html.classList.add('html_hidden')
+  body.classList.add('html_hidden')
   arrDescr[n].classList.remove('hidden');
   arrPrice[n].classList.remove('hidden');
   arrDescr[n].style.top=`${html.scrollTop + 'px'}`
   }
 
-  function close(n){
-    html.classList.remove('html_hidden')
-    arrDescr[n].classList.add('hidden');
-    arrPrice[n].classList.add('hidden');
-    arrDescr[n].style.top=`${'-150%'}`
+  function close(n, e){
+    if(e.target.classList.contains('service__descr') ||
+    e.target.classList.contains('service__descr_svg')){
+      body.classList.remove('html_hidden')
+      arrDescr[n].classList.add('hidden')
+      arrPrice[n].classList.add('hidden')
+      arrDescr[n].style.top=`${'-150%'}`;
     }
-
+  }
 
 
   useEffect(() => {
@@ -40,7 +43,7 @@ const Services = () => {
   },[])
   return (
   <section className="services">
-    <div className="center_container relative">
+    <div className="center_container relative" >
       <div className="service__grid">
       <img id="img" src="/media/img/main/header/1.jpg" alt="" />
         {loading? state.map((e, i)=>(
@@ -50,10 +53,11 @@ const Services = () => {
         }
       </div>
     </div>
-        <div className="service__descr hidden">
-          <div className="service__descr_close" onClick={()=>close(0)}>
+        <div className="service__descr hidden" onClick={(e)=>close(0, e)}>
+          <div className="service__descr_close" onClick={(e)=>close(0, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
+          
           <ul className="service__descr_ul">
             <span>Я помогу вам решить такие проблемы как:</span>
             <li>- много вещей, нечего носить</li>
@@ -86,8 +90,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="service__descr hidden">
-          <div className="service__descr_close" onClick={()=>close(1)}>
+        <div className="service__descr hidden" onClick={(e)=>close(1, e)}>
+          <div className="service__descr_close" onClick={(e)=>close(1, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
           <p className="service__descr_text">Вы заполняете анкету или мы общаемся лично, я анализирую ваш запрос, после чего я делаю предварительный шопинг, чтобы заблаговременно собрать и подготовить комплекты для примерки, и сэкономить ваше время.
@@ -106,8 +110,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="service__descr hidden">
-          <div className="service__descr_close" onClick={()=>close(2)}>
+        <div className="service__descr hidden" onClick={(e)=>close(2, e)}>
+          <div className="service__descr_close" onClick={(e)=>close(2, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
           <p className="service__descr_text">Включает в себя разбор гардероба, шопинг-сопровождение, после чего у вас дома я  составляю максимальное
@@ -122,8 +126,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="service__descr hidden">
-          <div className="service__descr_close" onClick={()=>close(3)}>
+        <div className="service__descr hidden" onClick={(e)=>close(3, e)}>
+          <div className="service__descr_close" onClick={(e)=>close(3, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
           <p className="service__descr_text">Капсула составляется для конкретных целей, озвученных вами (вы заполняете анкету), и содержит до 20 вещей.
@@ -145,8 +149,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="service__descr hidden">
-          <div className="service__descr_close" onClick={()=>close(4)}>
+        <div className="service__descr hidden" onClick={(e)=>close(4, e)}>
+          <div className="service__descr_close" onClick={(e)=>close(4, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
           <p className="service__descr_text">
@@ -165,8 +169,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="service__descr hidden">
-          <div className="service__descr_close" onClick={()=>close(5)}>
+        <div className="service__descr hidden" onClick={(e)=>close(5, e)}>
+          <div className="service__descr_close" onClick={(e)=>close(5, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
           <p className="service__descr_text">
@@ -180,8 +184,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="service__descr hidden">
-          <div className="service__descr_close" onClick={()=>close(6)}>
+        <div className="service__descr hidden" onClick={(e)=>close(6, e)}>
+          <div className="service__descr_close" onClick={(e)=>close(6, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
           <p className="service__descr_text">
@@ -200,8 +204,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="service__descr hidden">
-          <div className="service__descr_close" onClick={()=>close(7)}>
+        <div className="service__descr hidden" onClick={(e)=>close(7, e)}>
+          <div className="service__descr_close" onClick={(e)=>close(7, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
           <p className="service__descr_text">Книга стиля является отличным помощником для людей, желающих найти свой стиль. Следуя индивидуальным

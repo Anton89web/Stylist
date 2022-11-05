@@ -38,8 +38,24 @@
     text-decoration: none
     cursor: pointer
     transition: all .3s ease-in-out
+    margin-bottom: .5em
     &:hover
       color: $bc_hover
+  &__whatsapp
+    display: inline-block
+    @extend %main-title
+    font-size: 1.5em
+    line-height: 1em
+    color: $bc
+    text-decoration: none
+    cursor: pointer
+    transition: all .3s ease-in-out
+    padding: 10px 20px
+    border: solid 1px $bc
+    margin-bottom: 1.5em
+    &:hover
+      color: #181818
+      background-color: $bc
 
 .social
   &__wrapp
@@ -49,4 +65,4 @@
   &__icon
     transition: all .3s ease-in-out
     &:hover
-      opacity: .7
+      opacity: .6
