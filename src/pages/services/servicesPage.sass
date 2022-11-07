@@ -49,18 +49,20 @@
       text-align: left
   &__descr
     @extend %service__descr
+    &_ul
+      margin-right: auto
     &_close
       cursor: pointer
       transition: all 0.3s ease-in-out
       position: relative
       right: -48%
-      top: -2%
-      height: 3%
-      width: 4%
+      top: 0%
+      height: 2%
+      width: 3%
       display: flex
       &:hover
         opacity: .7
-        top: -2.5%
+        top: -.5%
     &_text
       padding: 20px 0
     &_price
@@ -69,6 +71,7 @@
       opacity: 1
       left: 0
       margin-top: 5%
+
 .price
   font-family: 'Garamond', sans-serif
   font-size: 1.51em
