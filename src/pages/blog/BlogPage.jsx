@@ -17,8 +17,10 @@ const Blog = ({main, pagination}) =>{
     const html = document.querySelector("html")
     const body = document.querySelector("body")
     element.classList.add('show__full_card');
-    element.style.top=`${html.scrollTop + 'px'}`
+    element.style.cssText=`height: ${window.outerHeight+'px'}; top: ${html.scrollTop + 'px'};`
+    // element.style.top=`${html.scrollTop + 'px'}`
     body.style.overflow='hidden';
+    console.log(window.outerHeight);
   }
 
   function hiddenFull(i, e){

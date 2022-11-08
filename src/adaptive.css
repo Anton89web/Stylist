@@ -165,6 +165,7 @@
     .descr__img {
         max-width: 100%;
         object-fit: cover;
+        padding-bottom: 5%;
     }
 
     .blog__eng {
@@ -244,9 +245,9 @@
     }
 
     .name__eng {
-        right: -5vw;
+        right: 0vw;
         width: 30vw;
-        top: 18vw;
+        top: 28vw;
     }
 
     .about__name_eng {
@@ -255,6 +256,13 @@
         width: 50vw;
     }
 
+    .portfolio__card_subtitle,
+    .portfolio__card_title {
+        font-family: Cormorant Garamond, serif;
+        font-size: 2.5em;
+        line-height: 1.12em;
+        text-align: center;
+    }
 
     .portfolio__categoria_link {
         max-width: 150px;
@@ -273,12 +281,14 @@
     .portfolio__title,
     .services__title {
         margin-top: 1.5em;
+        font-size: 2.3rem;
     }
 
+
     .services__eng {
-        top: -4vh;
-        right: -16vw;
-        width: 32vw;
+        top: -6vh;
+        right: -21vw;
+        width: 35vw;
     }
 
     .service__descr {
@@ -290,7 +300,7 @@
     .portfolio__eng {
         top: -12vw;
         width: 32vw;
-        right: -2vw;
+        right: -5vw;
     }
 
     .portfolio__categoria_links {
@@ -299,8 +309,9 @@
     }
 
     .reviews__eng {
-        right: -14vw;
+        right: -18vw;
         width: 32vw;
+        top: -12vw;
     }
 
     .reviews__carousel_left {
@@ -364,6 +375,7 @@
     .contacts__eng {
         right: -7vw;
         width: 34vw;
+        top: -12vw;
     }
 
     .contacts__mail {
@@ -403,7 +415,7 @@
     }
 
     .portfolio__card_subtitle {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
 }
@@ -449,35 +461,26 @@
         line-height: 1.35em;
     }
 
-    .services__eng {
-        top: -4vh;
-        right: -11vw;
-        width: 40vw;
-    }
 
     .btn {
         margin-top: 50px !important;
     }
 
-    .portfolio__title {
-        font-size: 3em;
-    }
-
     .portfolio__eng {
         top: -14vw;
         width: 35vw;
-        right: -4vw;
+        right: -1vw;
     }
 
     .reviews__eng {
-        right: -10vw;
+        right: -17vw;
         width: 40vw;
         top: -15vw;
     }
 
     .services__eng {
-        top: -9vw;
-        right: -17vw;
+        top: -10vw;
+        right: -21vw;
         width: 40vw;
     }
 
@@ -491,7 +494,7 @@
 
     .blog__eng {
         top: -17vw;
-        right: -26vw;
+        right: -30vw;
         width: 30vw;
     }
 
@@ -509,7 +512,7 @@
 
     .contacts__eng {
         top: -14vw;
-        right: -11vw;
+        right: -6vw;
         width: 40vw;
     }
 
