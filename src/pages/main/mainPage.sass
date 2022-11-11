@@ -9,7 +9,7 @@
 
 .name
   &__title
-    font-family: "Cormorant Garamond", serif
+    font-family: "Cormorant Cormorant Garamond", serif
     font-size: 4.37em
     text-align: center
     margin-top: 40px
@@ -29,7 +29,7 @@
 .about
   &__bottom-text
     padding: 0 55px
-    font-family: 'Cormorant Garamond', serif
+    font-family: 'Cormorant Cormorant Garamond', serif
     font-size: 1.73em
     line-height: 1.3em
     text-align: center
@@ -58,9 +58,10 @@
   &__title
     @extend %main-title
   &__descr
-    height: 635px
-    background: #D9D9D9
-    position: relative
+    font-family: 'Cormorant Garamond', serif
+    font-size: 2.05em
+    line-height: 1.05em
+    text-align: left
   &__eng
     position: absolute
     top: -4vh
@@ -120,21 +121,18 @@
   &__carousel_wrapp
     justify-content: center
     align-items: center
-    min-height: 600px
     height: 100%
     display: flex
-    margin-bottom: 7%
+    margin-bottom: 15%
   &__text
     max-width: 350px
     text-align: left
     @extend %main-text
   &__img
     @extend %img
-    max-width: 350px
+    max-width: 550px
     &_wrapp
       height: 100%
-      width: 45%
-
 
 .blog
   padding: 0px 20px 100px

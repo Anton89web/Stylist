@@ -49,6 +49,10 @@
       text-align: left
   &__descr
     @extend %service__descr
+    &_title
+      font-size: 1.4em
+      font-family: "Cormorant Garamond", serif
+      margin: 1em 0
     &_ul
       margin-right: auto
     &_close
@@ -64,7 +68,8 @@
         opacity: .7
         top: -.5%
     &_text
-      padding: 20px 0
+      padding-bottom: 1em
+      margin-right: auto
     &_price
       transition: all .6s ease-in-out
       position: relative
@@ -73,8 +78,8 @@
       margin-top: 5%
 
 .price
-  font-family: 'Garamond', sans-serif
-  font-size: 1.51em
+  font-family: "Cormorant Garamond", serif
+  font-size: 2em
   &__wrapper
     display: flex
     align-items: baseline
@@ -83,8 +88,8 @@
     position: relative
     overflow: hidden
   &__condition
-    font-family: 'Garamond', sans-serif
-    font-size: 1em
+    font-family: "Cormorant Garamond", serif
+    font-size: 1.2em
     padding: 0 20px
 .hidden
   top: -150%
@@ -103,5 +108,4 @@
 #img
   grid-column: 2/3
   grid-row: 1/5
-  height: 90%
   margin: auto 0

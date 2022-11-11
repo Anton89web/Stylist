@@ -8,7 +8,7 @@ const BlogCard = ({ show, hidden, img, text, time}) => {
          <div >
       <div className="blog__card"  onClick={()=> show()}>
         <img className="blog__img" src={img} alt=""/>
-        <div className="blog__text">{text[0].slice(0, 69) + "..."}</div>
+        <div className="blog__text">{text[0].slice(0, text[0].indexOf('.')) + "."}</div>
         <div className="blog__data">{time}</div>
       </div>
       <div className="card__full" onClick={e=>hidden(e)}>

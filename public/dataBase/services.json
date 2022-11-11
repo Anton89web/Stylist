@@ -45,7 +45,18 @@
   },
   {
     "name": "ONLINE СОПРОВОЖДЕНИЕ",
-    "p": "ONLINE СОПРОВОЖДЕНИЕ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus ipsam corporis, ducimus magni numquam incidunt optio quam assumenda nesciunt rem facilis, enim provident nemo eum et tempore blanditiis ea.",
+    "p": 
+    [
+      "Хотите быть постоянно на связи со мной? И получать решение и ответы на интересующие вас вопросы по стилю на протяжении месяца?",
+      "Месячное ведение позволит поддерживать общение и обращаться за помощью в любом удобном для вас мессенджере.",
+      "В индивидуальной беседе вы сможете задать такие вопросы, как:",
+      "1. Какой образ подобрать под мероприятие или на повседневную носку;",
+      "2. Где найти необходимую вещь онлайн;",
+      "3. Сориентирую, в каком магазине можно приобрести ту или иную вещь;",
+      "4. Как правильно сочетать вещи между собой;",
+      "5. Как подобрать размер вещей в онлайн-магазине",
+      "И многие другие."
+    ],
     "price_text": "1 месяц",
     "price": "2 000 рублей",
     "price2_text": "12 месяцев",
@@ -53,15 +64,17 @@
   },
   {
     "name": "СТИЛИЗАЦИЯ ФОТОСЕССИИ",
-    "p": "2 образа, подходящих вам и под локацию. Рекомендации по прическе и макияжу.",
+    "p":  "2 образа, подходящих вам и под локацию. Рекомендации по прическе и макияжу.",
     "price": "от 3 500 рублей"
   },
   {
     "name": "ОБРАЗ НА МЕРОПРИЯТИЕ",
-    "p": "ОБРАЗ НА МЕРОПРИЯТИЕ. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam consequatur mollitia incidunt magni. Reprehenderit distinctio voluptate accusamus dolorum asperiores doloremque, non eligendi. Aut, a. Sed esse repellat in velit quidem! ",
-    "price_text": "Online от",
+    "p": ["Не знаете что надеть на мероприятие и вам нужна помощь?",
+          "Я соберу его для вас по желанию: из уже имеющихся вещей или пришлю варианты новых образов, которые могли бы подойти под ваш запрос."
+          ],
+    "price_text": "ONLINE от",
     "price": "3 500 рублей",
-    "price2_text": "Offline от",
+    "price2_text": "OFFLINE от",
     "price2": "3 000 рублей"
   },
 

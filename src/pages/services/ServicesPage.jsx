@@ -38,7 +38,6 @@ const Services = () => {
         (result) => {
           setState(result)
           setLoading(true)
-          console.log(result);
         },
         (error) => {
           alert(error);
@@ -49,7 +48,7 @@ const Services = () => {
   <section className="services">
     <div className="center_container relative" >
       <div className="service__grid">
-      <img id="img" src="/media/img/main/header/1.jpg" alt="" />
+      <img id="img" src="/media/img/main/service/1.jpg" alt="" />
         {loading? state.map((e, i)=>(
           <Service title={e.name} fnc={open} arg={i} key={i}/>
         ))
@@ -63,7 +62,9 @@ const Services = () => {
           <div className="service__descr_close" onClick={(e)=>close(0, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
-          
+          <h3 className="service__descr_title">
+            {state[0].name}
+          </h3>
           <ul className="service__descr_ul">
           <span>{state[0].ul_title1}</span>
             {state[0].ul_li1.map((li, i) =>(
@@ -100,6 +101,9 @@ const Services = () => {
           <div className="service__descr_close" onClick={(e)=>close(1, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
+          <h3 className="service__descr_title">
+            {state[1].name}
+          </h3>
           {state[1].p.map((p,i)=>(
           <p className="service__descr_text" key={i}>
             {p}
@@ -118,6 +122,9 @@ const Services = () => {
           <div className="service__descr_close" onClick={(e)=>close(2, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
+          <h3 className="service__descr_title">
+            {state[2].name}
+          </h3>
           {state[2].p.map((p,i)=>(
           <p className="service__descr_text" key={i}>
             {p}
@@ -135,6 +142,9 @@ const Services = () => {
           <div className="service__descr_close" onClick={(e)=>close(3, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
+          <h3 className="service__descr_title">
+            {state[3].name}
+          </h3>
           {state[3].p.map((p,i)=>(
           <p className="service__descr_text" key={i}>
             {p}
@@ -153,17 +163,22 @@ const Services = () => {
       <div className="service__descr_close" onClick={(e)=>close(4, e)}>
         <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
       </div>
-      <p className="service__descr_text">
-      {state[4].p}
-      </p>
+      <h3 className="service__descr_title">
+            {state[4].name}
+          </h3>
+      {state[4].p.map((p,i)=>(
+        <p className="service__descr_text" key={i}>
+          {p}
+        </p>))
+      }
       <div className="service__descr_price hidden">
         <div className="price__wrapper">
           <span className="price">{state[4].price}</span>
           <span className="price__condition">{state[4].price_text}</span>
         </div>
         <div className="price__wrapper">
-          <span className="price">{state[4].price}</span>
-          <span className="price__condition">{state[4].price_text}</span>
+          <span className="price">{state[4].price2}</span>
+          <span className="price__condition">{state[4].price2_text}</span>
         </div>
       </div>
     </div> : <h1>Загружается</h1>
@@ -173,6 +188,9 @@ const Services = () => {
           <div className="service__descr_close" onClick={(e)=>close(5, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
+          <h3 className="service__descr_title">
+            {state[5].name}
+          </h3>
           <p className="service__descr_text">
           {state[5].p}
           </p>
@@ -187,9 +205,14 @@ const Services = () => {
           <div className="service__descr_close" onClick={(e)=>close(6, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
-          <p className="service__descr_text">
-          {state[6].p}
-          </p>
+          <h3 className="service__descr_title">
+            {state[6].name}
+          </h3>
+          
+          {state[6].p.map((p, i)=>(
+            <p className="service__descr_text" key={i}>{p}</p>
+          ))}
+          
           <div className="service__descr_price hidden">
             <div className="price__wrapper">
             <span className="price">{state[6].price_text}&nbsp;</span>
@@ -206,6 +229,9 @@ const Services = () => {
           <div className="service__descr_close" onClick={(e)=>close(7, e)}>
             <img className="service__descr_svg" src="media/icons/cross.svg" alt=""/>
           </div>
+          <h3 className="service__descr_title">
+            {state[7].name}
+          </h3>
           <p className="service__descr_text">
           {state[7].p}
           </p>

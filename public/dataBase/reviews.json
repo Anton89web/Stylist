@@ -1,9 +1,5 @@
 [
-  {"review": "media/img/main/header/1.jpg"},
-  {"review": "media/img/main/header/2.jpg"},
-  {"review": "media/img/main/header/3.jpg"},
-  {"review": "media/img/main/header/4.jpg"},
-  {"review": "media/img/main/header/5.jpg"},
-  {"review": "media/img/main/header/6.jpg"}
-
+  {"review": "media/img/main/reviews/1.jpg"},
+  {"review": "media/img/main/reviews/2.jpg"},
+  {"review": "media/img/main/reviews/3.jpg"}
 ]
