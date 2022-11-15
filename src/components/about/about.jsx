@@ -15,7 +15,7 @@ const About = ({title, btn, text1, text2, list, fz, img}) => {
         "" }
         <div className="about__descr">
           <img src={img? img : "media/img/main/header/6.jpg"} alt="" className="descr__img" />
-          <div className="descr__text_wrapp" style={{fontSize: fz || '1em'}}>
+          <div className="descr__text_wrapp">
             <p className="descr__text">
             Меня зовут Диана Смирнова.<br/>
             Я - практикующий женский и мужской стилист. Выпускница Fashion-академии PSFA, участница многочисленных образовательных проектов  от топ стилистов Александра Рогова, Арсена 
@@ -33,7 +33,7 @@ const About = ({title, btn, text1, text2, list, fz, img}) => {
             {list ? list : ""}
             {btn ? 
               <NavLink to="/about" >
-                <Btn mt={'20px'}/>
+                <Btn mt={'60px'}/>
               </NavLink>
              : ""}
           </div>

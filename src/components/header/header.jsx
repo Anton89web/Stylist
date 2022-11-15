@@ -41,7 +41,7 @@ const Header = ({burger}) => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contacts" className={setActive} onClick={(e)=> showMenu()}>
+            <NavLink to="contacts" className={setActive} onClick={(e)=> showMenu()}>
               КОНТАКТЫ
             </NavLink>
           </li>

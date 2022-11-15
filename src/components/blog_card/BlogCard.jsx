@@ -1,13 +1,13 @@
 import "./blog_card.sass"
 
 
-const BlogCard = ({ show, hidden, img, text, time}) => {
+const BlogCard = ({ show, hidden, img, img_title, text, time}) => {
 
 
   return(
          <div >
       <div className="blog__card"  onClick={()=> show()}>
-        <img className="blog__img" src={img} alt=""/>
+        <img className="blog__img" src={img_title} alt=""/>
         <div className="blog__text">{text[0].slice(0, text[0].indexOf('.')) + "."}</div>
         <div className="blog__data">{time}</div>
       </div>
