@@ -1,4 +1,4 @@
-import Btn from "../btn/Btn";
+import Btn from "../btn/btn";
 import { NavLink } from "react-router-dom";
 
 import "./about.sass"

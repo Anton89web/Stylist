@@ -1,6 +1,6 @@
 import "./aboutPage.sass"
 import AboutIf from "../../components/about/AboutIf";
-import About from "../../components/about/About";
+import About from "../../components/about/about";
 
 const AboutPage = () => {
   const data = [

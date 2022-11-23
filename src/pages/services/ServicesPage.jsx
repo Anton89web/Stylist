@@ -52,7 +52,7 @@ const Services = () => {
         {loading? state.map((e, i)=>(
           <Service title={e.title} fnc={open} arg={i} key={i}/>
         ))
-          : <h4>LOADING</h4>
+          : <h4>Загружается...</h4>
         }
       </div>
     </div>

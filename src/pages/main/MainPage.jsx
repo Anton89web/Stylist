@@ -1,5 +1,5 @@
-import About from "../../components/about/About";
-import Btn from "../../components/btn/Btn";
+import About from "../../components/about/about";
+import Btn from "../../components/btn/btn";
 import PortfolioFoto from "../../components/portfolio_foto/PortfolioFoto";
 import { NavLink } from "react-router-dom";
 import "./mainPage.sass"

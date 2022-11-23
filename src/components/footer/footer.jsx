@@ -1,4 +1,4 @@
-import Header from "../header/Header";
+import Header from "../header/header";
 import "./footer.sass"
 
 
@@ -21,10 +21,10 @@ const Footer = () => {
           Написать в Whatsapp
         </a>
         <div className="social__wrapp">
-          <a className="social__icon" href="https://instagram.com/vstile.di" target="_blank">
+          <a className="social__icon" href="https://instagram.com/vstile.di" target="_blank" rel="noreferrer">
             <img src="static/icons/insta.svg" alt="" />
           </a>
-          <a className="social__icon" href="https://vk.com/style_sar" target="_blank">
+          <a className="social__icon" href="https://vk.com/style_sar" target="_blank" rel="noreferrer">
             <img src="static/icons/vk.svg" alt="" />
           </a>
         </div>
