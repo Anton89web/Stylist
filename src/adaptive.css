@@ -131,11 +131,11 @@
         }
 
         .about__quotes {
-            top: -12%;
+            top: -28%;
         }
 
         .about__quotes_down {
-            bottom: -16%;
+            bottom: -35%;
         }
 
         .about__bottom-text {
@@ -227,6 +227,8 @@
         .price__wrapper {
             gap: 15px;
             flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
         }
 
         .service__grid {
@@ -271,13 +273,17 @@
         }
 
         .services__descr {
-            font-size: 1.3em;
+            font-size: 1.4em;
         }
 
         .about__name_eng {
             top: -37vw;
             left: 48%;
             width: 50vw;
+        }
+
+        .descr__text_wrapp {
+            font-size: 1.3em;
         }
 
         .portfolio__card_subtitle,
@@ -298,6 +304,7 @@
 
         .about__bottom-text {
             line-height: 1em;
+            font-size: 1.3em;
         }
 
         .blog__title,
@@ -374,7 +381,7 @@
         }
 
         .reviews__carousel_wrapp {
-            min-height: 450px;
+            min-height: 400px;
         }
 
         .blog {
@@ -474,7 +481,7 @@
         }
 
         .about__name_eng {
-            top: -37vw;
+            top: -38vw;
             left: 43%;
             width: 55vw;
         }

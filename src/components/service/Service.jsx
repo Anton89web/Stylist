@@ -11,7 +11,7 @@ const Service = ({ title, fnc, arg}) => {
         </div>
         <div className="service__subtitle_wrapper">
           <span className="service__subtitle">ПОДРОБНЕЕ</span>
-          <img src="media/icons/arrow.svg" alt="" className="service__title_arrow"/>
+          <img src="static/icons/arrow.svg" alt="" className="service__title_arrow"/>
         </div>
       </div>
     </>

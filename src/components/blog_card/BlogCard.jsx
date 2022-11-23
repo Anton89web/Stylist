@@ -1,25 +1,25 @@
 import "./blog_card.sass"
 
 
-const BlogCard = ({ show, hidden, img, img_title, text, time}) => {
 
-
+const BlogCard = ({title, show, hidden, img, img_title, text, time}) => {
+  const timeCreate = new Date(time).toLocaleDateString()
   return(
          <div >
       <div className="blog__card"  onClick={()=> show()}>
         <img className="blog__img" src={img_title} alt=""/>
-        <div className="blog__text">{text[0].slice(0, text[0].indexOf('.')) + "."}</div>
-        <div className="blog__data">{time}</div>
+        <div className="blog__text">{title}</div>
+        <div className="blog__data">{timeCreate}</div>
       </div>
       <div className="card__full" onClick={e=>hidden(e)}>
         <div className="center_container">
-            <img className="card__full_close" src="media/icons/cross.svg" alt="" onClick={e=>hidden(e)}/>
+            <img className="card__full_close" src="static/icons/cross.svg" alt="" onClick={e=>hidden(e)}/>
         <div className="card__img_wrapp" >
           <img src={img} alt="" className="card__img"/>
-          </div>
-          {text.map((p, i)=>(
-            <p className="card__full_text" key={i}>{p}</p>
-            ))}
+        </div >
+         <div className="card__full_text">
+          {text}
+        </div> 
         </div>
       </div>
          </div>

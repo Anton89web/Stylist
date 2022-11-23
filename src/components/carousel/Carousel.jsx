@@ -8,11 +8,12 @@ const Carousel = () =>{
   const [loading, setLoading] = useState(false)
 
 useEffect(()=>{
-fetch("dataBase/reviews.json")
+fetch("https://dismirnova.ru/api/v1/feedback/")
 .then(res => res.json())
 .then((res)=> {
 setLoading(true)  
-setSlide(res)},
+setSlide(res)
+},
 (err)=> {alert(err)}
 )},[])
 
@@ -28,11 +29,11 @@ setSlide(res)},
   return(
     loading ?
     <div className="reviews__carousel_wrapp">
-    <img src="media/icons/shevron.svg" alt="" className="reviews__carousel_left" onClick={()=>prevSlide()}/>
+    <img src="static/icons/shevron.svg" alt="" className="reviews__carousel_left" onClick={()=>prevSlide()}/>
       <div className="reviews__img_wrapp">
-        <img src={slide[state].review} alt="" className="reviews__img"/>
+        <img src={slide[state].photo} alt="" className="reviews__img"/>
       </div>
-      <img src="media/icons/shevron.svg" alt="" className="reviews__carousel_rigth" onClick={()=>nextSlide()}/>
+      <img src="static/icons/shevron.svg" alt="" className="reviews__carousel_rigth" onClick={()=>nextSlide()}/>
     </div>
     : <h1>ЗАГРУЖАЕТСЯ</h1>
   )

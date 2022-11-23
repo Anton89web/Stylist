@@ -7,7 +7,7 @@ const Portfolio = () => {
   const [loading, setLoading] = useState(false);
   const [num, setNum] = useState(0)
   useEffect(() => {
-    fetch("dataBase/portfolio.json")
+    fetch("https://dismirnova.ru/api/v1/portfolio/")
       .then(res => res.json())
       .then(
         (result) => {
@@ -42,7 +42,7 @@ const Portfolio = () => {
           }
         </ul>
         <div className="portfolio__categoria_cards">
- <PortfolioCard title={state[num].title} subtitle={state[num].subtitle} descr={state[num].descr} foto={state[num].foto} />
+ <PortfolioCard descr={state[num].description} foto={state[num]} />
         </div>
       </div>
     </section>

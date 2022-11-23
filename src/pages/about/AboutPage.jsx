@@ -1,26 +1,40 @@
 import "./aboutPage.sass"
 import AboutIf from "../../components/about/AboutIf";
-import {useEffect, useState} from "react";
 import About from "../../components/about/About";
 
 const AboutPage = () => {
-  const [data, setData] = useState()
-  const [loading, setLoading] = useState(false)
-  useEffect(() => {
-    fetch("dataBase/about.json")
-      .then(res => res.json())
-      .then(
-        (result) => {
-          setData(result)
-          setLoading(true)
-        },
-        (error) => {
-          alert(error);
-        }
-      )
-  },[])
+  const data = [
+    { "id": "1",
+      "if": "Замечаете, что шопинг приносит только стресс и отнимает ценное время",
+      "img": "static/img/main/header/2.jpg"
+    },
+    {
+      "id": "2",
+      "if": "Боитесь выглядеть неуместно в обществе"
+    },
+    {
+      "id": "3",
+      "if": "Не понимаете, как подчеркнуть свой социальный статус с помощью одежды"
+    },
+    {
+      "id": "4",
+      "if": "Тратите деньги на одежду, которая потом \nне носится"
+    },
+    {
+      "id": "5",
+      "if": "Не умеете правильно сочетать одежду по цветам и моделям"
+    },
+    {
+      "id": "6",
+      "if": "Не знаете, что подходит вашему типу\n фигуры"
+    },
+    {
+      "id": "7",
+      "if": "Каждое утро не знаете что надеть"
+    }
+  ]
+
   return(
-    loading?
     <>
       <div className="about__header">
         <About img={data[0].img} />
@@ -43,7 +57,6 @@ const AboutPage = () => {
       </div>
       </div>
     </>
-    : "LOADING"
   )
 }
 

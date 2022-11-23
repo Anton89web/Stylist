@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="center_container">
         <h3 className="contacts__title">
           КОНТАКТЫ
-          <img className="contacts__eng" src="media/icons/contacts.svg" alt=""/>
+          <img className="contacts__eng" src="static/icons/contacts.svg" alt=""/>
         </h3>
         <p className="contacts__subtitle">
           Свяжитесь со мной любым удобным для вас способом!
@@ -22,10 +22,10 @@ const Footer = () => {
         </a>
         <div className="social__wrapp">
           <a className="social__icon" href="https://instagram.com/vstile.di" target="_blank">
-            <img src="media/icons/insta.svg" alt="" />
+            <img src="static/icons/insta.svg" alt="" />
           </a>
           <a className="social__icon" href="https://vk.com/style_sar" target="_blank">
-            <img src="media/icons/vk.svg" alt="" />
+            <img src="static/icons/vk.svg" alt="" />
           </a>
         </div>
       </div>

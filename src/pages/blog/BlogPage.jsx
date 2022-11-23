@@ -48,10 +48,9 @@ const Blog = ({main, pagination}) =>{
   }
 
   useEffect(() => {
-    fetch("dataBase/blog.json")
+    fetch("https://dismirnova.ru/api/v1/blog/")
       .then(res => res.json())
-      .then(
-        (result) => {
+      .then((result) => {
           setLoading(true)
           setBlogs(result)
         },
@@ -68,7 +67,7 @@ const Blog = ({main, pagination}) =>{
     <div className="center_container">
      <div className="blog__grid">
        {(main? blogs.slice(0, 3) : blogs.slice(firstIndex, lastIndex)).map((e , i) => (
-  <BlogCard  key={i} text={e.text} img={e.img} img_title={e.img_title} time={e.time} show={()=>showFull(i)} hidden={(e)=>hiddenFull(i, e)}/>))}
+  <BlogCard key={i} title={e.title} text={e.content} img={e.photo_big} img_title={e.photo} time={e.time_create} show={()=>showFull(i)} hidden={(e)=>hiddenFull(i, e)}/>))}
      </div> 
 {!pagination? 
  <nav className="pagination__wrapper" aria-label="Навигации по страницам">
