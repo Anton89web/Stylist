@@ -12,7 +12,7 @@ const Services = () => {
   function open(n){
   const arrDescr = document.querySelectorAll('.service__descr')
   const arrPrice = document.querySelectorAll('.service__descr_price')
-  body.classList.add('html_hidden')
+  body.style.overflow='hidden';
   arrDescr[n].classList.remove('hidden');
   arrPrice[n].classList.remove('hidden');
   arrDescr[n].style.top=`${html.scrollTop + 'px'}`
@@ -23,7 +23,7 @@ const Services = () => {
   const arrPrice = document.querySelectorAll('.service__descr_price')
     if(e.target.classList.contains('service__descr') ||
     e.target.classList.contains('service__descr_svg')){
-      body.classList.remove('html_hidden')
+      body.style.overflow='';
       arrDescr[n].classList.add('hidden')
       arrPrice[n].classList.add('hidden')
       arrDescr[n].style.top=`${'-150%'}`;
